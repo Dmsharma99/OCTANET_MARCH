@@ -1,0 +1,143 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: capitalize;
+}
+
+.btn{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.btn:hover{
+    color: wheat;
+    background-color: rgb(255, 162, 0);
+}
+.name{
+    margin: 0;
+    padding: 0;
+    background-color: red;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    height: 50px;
+    width: 100%;
+}
+.name h1{
+    margin: 10px;
+    padding: 5px;
+    color: white;
+}
+.name .btn {
+    margin: 10px;
+    padding: 5px;
+}
+.links{
+    margin: 0;
+    padding: 0;
+    background-color: aqua;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    height: 50px;
+    width: 100%;
+}
+.links .nav ul li{
+    display: inline;
+    justify-content: space-evenly;
+}
+.links .nav ul li a{
+    color: black;
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(102, 255, 0);
+    padding: .5rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2rem;
+}
+.main {
+    background-image: url(poster.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    padding-top: 272px;
+    padding-bottom: 160px;
+}
+.main .content{
+    text-align: center;
+    width: 960px;
+}
+
+span{
+    background: orangered;
+    color: #fff;
+    display: inline-block;
+    padding: .5rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
+.footer{
+    padding-top: 0.1px;
+    background-color: gray;
+}
+.footer .lower{
+    background-color: black;
+    color: white;
+}
+.footer .lower p{
+    text-align: center;
+}
+.footer .upper{
+    padding: 10px;
+    display: inline-flex;
+}
+.footer .upper .privacy-policy{
+    width: 40%;
+}
+.footer .upper .quick-links{
+    width: 30%;
+}
+.footer .upper .contact-us{
+    width: 30%;
+}
+h3{
+    color: yellow;
+}
+.footer .upper .contact-us div{
+    color: blue;
+}
+.footer .quick-links ul li a{
+    text-decoration: none;
+    color: black;
+}
+.footer .quick-links ul li{
+    list-style: none;
+}
+.footer .quick-links ul li a:hover{
+    color: orangered;
+}
+
+@media screen and (max-width: 600px) {
+    .name{
+        font-size: 10px;
+    }
+    .upper{
+      flex-direction: column;  
+    }
+    .number{
+        font-size: 10px;
+    }
+    h3{
+        font-size: 15px;
+    }
+}
